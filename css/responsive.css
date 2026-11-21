@@ -1,0 +1,1366 @@
+/* ==========================================================================
+   ABDULLAH MAHMOOD — PREMIUM PORTFOLIO
+   Responsive Media Queries & Breakpoint Adaptations
+   Breakpoints: 375px, 480px, 768px, 992px, 1200px, 1440px
+   Day 3: Navigation, 3D Hero & About Section Responsive Adaptation
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Large Desktop (1440px and above)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  :root {
+    --container-max-width: 1380px;
+    --navbar-height-initial: 92px;
+  }
+
+  .navbar__logo-title {
+    font-size: 1.375rem;
+  }
+
+  .navbar__menu {
+    gap: 2.75rem;
+  }
+
+  .hero__title {
+    font-size: 4.25rem;
+  }
+
+  .hero-visual__frame {
+    width: 370px;
+    height: 480px;
+  }
+
+  .hero-3d-scene {
+    max-width: 480px;
+    height: 560px;
+  }
+
+  .about-visual__frame {
+    height: 520px;
+  }
+
+  /* Day 5 Services Section 1440px */
+  .services-grid {
+    gap: 2.25rem;
+  }
+
+  .service-card {
+    padding: 2.75rem 2.5rem;
+  }
+
+  /* Day 6 Projects Section 1440px */
+  .projects-grid {
+    gap: 2.25rem;
+  }
+
+  /* Day 7 Journey Section 1440px */
+  .education-grid {
+    gap: 2.25rem;
+  }
+
+  .achievements-grid {
+    gap: 1.75rem;
+  }
+
+  .highlights-strip {
+    gap: 1.75rem;
+  }
+
+  .certifications-grid {
+    gap: 2rem;
+  }
+
+  /* Day 8 Testimonials Section (1440px) */
+  .testimonials-carousel__slide {
+    flex: 0 0 calc((100% - 2 * 2rem) / 3);
+    max-width: calc((100% - 2 * 2rem) / 3);
+  }
+
+  .testimonials-carousel__track {
+    gap: 2rem;
+  }
+
+  /* Day 9 Contact Section (1440px) */
+  .contact__grid {
+    gap: 4rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Standard Desktop / Laptop (1200px to 1439px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  :root {
+    --container-padding: 1.75rem;
+  }
+
+  .navbar__nav-group {
+    gap: 2rem;
+  }
+
+  .navbar__menu {
+    gap: 1.75rem;
+  }
+
+  .hero-container {
+    gap: 2.5rem;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .hero-glass-card--top {
+    right: -2%;
+  }
+
+  .hero-glass-card--bottom {
+    left: -4%;
+  }
+
+  .about__grid {
+    gap: 3.5rem;
+  }
+
+  .skills-grid {
+    gap: 1.25rem;
+  }
+
+  /* Day 5 Services Section 1200px */
+  .services-grid {
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 2.25rem 1.75rem;
+  }
+
+  /* Day 6 Projects Section 1200px */
+  .projects-grid {
+    gap: 1.5rem;
+  }
+
+  /* Day 7 Journey Section 1200px */
+  .education-grid {
+    gap: 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .achievement-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .achievement-card__number-wrap {
+    font-size: 2.35rem;
+  }
+
+  .research-card {
+    padding: 2.25rem;
+    gap: 2rem;
+  }
+
+  .certifications-grid {
+    gap: 1.5rem;
+  }
+
+  .highlights-strip {
+    gap: 1.25rem;
+  }
+
+  .timeline-item--left {
+    padding-right: 2.5rem;
+  }
+
+  .timeline-item--right {
+    padding-left: 2.5rem;
+  }
+
+  /* Day 8 Testimonials Section (1200px) */
+  .testimonials-carousel__slide {
+    flex: 0 0 calc((100% - 2 * 1.5rem) / 3);
+    max-width: calc((100% - 2 * 1.5rem) / 3);
+  }
+
+  .testimonials-carousel__track {
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.75rem;
+  }
+
+  /* Day 9 Contact Section (1200px) */
+  .contact__grid {
+    gap: 3rem;
+  }
+
+  .contact-form-card {
+    padding: 2.25rem 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablet Landscape & Small Laptop (992px to 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  :root {
+    --navbar-height-initial: 76px;
+    --navbar-height-scrolled: 64px;
+    --container-padding: 1.5rem;
+  }
+
+  /* Switch desktop menu to hamburger drawer on tablet & mobile */
+  .navbar__nav-group {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .hero-section {
+    padding: 4rem 0 3rem;
+    min-height: auto;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2.25rem, 4.2vw, 3.25rem);
+  }
+
+  .hero-visual__frame {
+    width: 300px;
+    height: 400px;
+  }
+
+  .hero-3d__ring--outer {
+    width: 420px;
+    height: 420px;
+  }
+
+  .hero-3d__ring--inner {
+    width: 340px;
+    height: 340px;
+  }
+
+  .hero-glass-card {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Day 3 About Section Landscape Adjustments */
+  .about-section {
+    padding: 5rem 0 4rem;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr 1.15fr;
+    gap: 2.75rem;
+  }
+
+  .about-visual__frame {
+    height: 440px;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.25rem 2rem;
+  }
+
+  .about-stat-card:nth-child(2)::after {
+    display: none;
+  }
+
+  /* Day 4 Skills Section Landscape */
+  .skills-section {
+    padding: 5rem 0 4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .skills-filter-nav {
+    gap: 0.625rem;
+    margin-bottom: 2.75rem;
+  }
+
+  /* Day 5 Services Section Tablet Landscape (991px) */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services-cta-banner {
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .services-cta-banner__btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* Day 6 Projects Section Tablet Landscape (991px) */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .projects-filter-nav {
+    gap: 0.625rem;
+    margin-bottom: 2.75rem;
+  }
+
+  /* Day 7 Journey Section Tablet Landscape (991px) */
+  .timeline-line {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .timeline-item--left,
+  .timeline-item--right {
+    padding-left: 55px;
+    padding-right: 0;
+  }
+
+  .timeline-item--left .timeline-marker,
+  .timeline-item--right .timeline-marker {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .research-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.25rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .highlights-strip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Day 8 Testimonials Section (991px Tablet) */
+  .testimonials-carousel__slide {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+    max-width: calc((100% - 1.5rem) / 2);
+  }
+
+  .testimonial-card {
+    padding: 1.85rem 1.5rem;
+  }
+
+  .testimonials-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  /* Day 9 Contact Section (991px Tablet) */
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .scroll-tester__space {
+    gap: 10rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Tablet Portrait (768px to 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero__content-col {
+    align-items: flex-start;
+  }
+
+  .hero__visual-col {
+    margin-top: 1rem;
+    overflow: visible;
+  }
+
+  .hero-3d-scene {
+    max-width: 380px;
+    height: 460px;
+  }
+
+  .hero-visual__frame {
+    width: 290px;
+    height: 380px;
+  }
+
+  .hero-3d__ring--outer {
+    width: 380px;
+    height: 380px;
+  }
+
+  .hero-3d__ring--inner {
+    width: 310px;
+    height: 310px;
+  }
+
+  .hero-glass-card--top {
+    top: 6%;
+    right: -2%;
+  }
+
+  .hero-glass-card--bottom {
+    bottom: 8%;
+    left: -2%;
+  }
+
+  /* Day 3 About Section Tablet Portrait */
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 3.75rem;
+  }
+
+  .about__visual-col {
+    margin-bottom: 1rem;
+  }
+
+  .about-visual__wrapper {
+    max-width: 360px;
+  }
+
+  .about-visual__frame {
+    height: 440px;
+  }
+
+  .about-card-badge--exp {
+    right: -10px;
+    bottom: -18px;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+
+  .about-stat-card:not(:last-child)::after {
+    display: none;
+  }
+
+  /* Day 4 Skills Section Tablet */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .skills-filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  /* Day 5 Services Section Tablet Portrait (768px) */
+  .services-section {
+    padding: 5rem 0 3.5rem;
+  }
+
+  .services__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .service-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-modal {
+    padding: 1rem;
+  }
+
+  .service-modal__dialog {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-modal__title {
+    font-size: 1.5rem;
+  }
+
+  .service-modal__footer {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+
+  .service-modal__cta-btn,
+  .service-modal__cancel-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Day 6 Projects Section Tablet Portrait (768px) */
+  .projects-section {
+    padding: 5rem 0 3.5rem;
+  }
+
+  .projects__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-modal {
+    padding: 1rem;
+  }
+
+  .project-modal__dialog {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-modal__title {
+    font-size: 1.5rem;
+  }
+
+  .project-modal__footer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .project-modal__actions-left {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-modal__action-btn,
+  .project-modal__cancel-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Day 7 Journey Section Tablet Portrait (768px) */
+  .journey-section {
+    padding: 5rem 0 3.5rem;
+  }
+
+  .journey__header {
+    margin-bottom: 3rem;
+  }
+
+  .journey-block {
+    margin-bottom: 4rem;
+  }
+
+  .timeline-items {
+    gap: 2.5rem;
+  }
+
+  .experience-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .education-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .achievement-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .research-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .highlight-card {
+    padding: 1.25rem 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .research-card {
+    padding: 1.75rem;
+  }
+
+  .research-card__visual {
+    min-height: 180px;
+  }
+
+  .cert-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Day 8 Testimonials Section (768px Mobile Landscape) */
+  .testimonials-section {
+    padding: 5rem 0 4rem;
+  }
+
+  .testimonials-carousel__slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .testimonials-cta {
+    padding: 2.25rem 1.75rem;
+  }
+
+  .testimonials-carousel__controls-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  /* Day 9 Contact Section (768px Mobile Landscape) */
+  .contact-section {
+    padding: 5rem 0 4rem;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row--2col {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-row--2col .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-form-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .site-footer__container {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .site-footer__left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Mobile Devices (480px to 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+  :root {
+    --navbar-height-initial: 72px;
+    --navbar-height-scrolled: 62px;
+    --container-padding: 1.25rem;
+  }
+
+  .navbar__logo-title {
+    font-size: 1.1875rem;
+  }
+
+  .navbar__logo-subtitle {
+    font-size: 0.5625rem;
+    letter-spacing: 0.12em;
+  }
+
+  .mobile-nav__drawer {
+    width: 90%;
+    padding: 1.5rem 1.5rem 2rem;
+  }
+
+  .mobile-nav__link {
+    font-size: 1.25rem;
+  }
+
+  .hero-section {
+    padding: 2.75rem 0 2rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 8.5vw, 2.625rem);
+  }
+
+  .hero__role-wrapper {
+    font-size: 1.125rem;
+    padding: 0.35rem 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .hero__actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.875rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__metrics {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-3d-scene {
+    max-width: 330px;
+    height: 420px;
+  }
+
+  .hero-visual__frame {
+    width: 260px;
+    height: 350px;
+  }
+
+  .hero-3d__ring--outer {
+    display: none;
+  }
+
+  .hero-3d__ring--inner {
+    width: 290px;
+    height: 290px;
+  }
+
+  .hero-glass-card {
+    padding: 0.625rem 0.875rem;
+    gap: 0.625rem;
+  }
+
+  .hero-glass-card__icon-box {
+    width: 34px;
+    height: 34px;
+    font-size: 0.875rem;
+  }
+
+  .hero-glass-card__title {
+    font-size: 0.8125rem;
+  }
+
+  .hero-glass-card__sub {
+    font-size: 0.6875rem;
+  }
+
+  .hero-glass-card--top {
+    top: 4%;
+    right: 0;
+  }
+
+  .hero-glass-card--bottom {
+    bottom: 6%;
+    left: 0;
+  }
+
+  /* Day 3 About Section Mobile */
+  .about-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .about__header {
+    margin-bottom: 3rem;
+  }
+
+  .about__heading {
+    font-size: 2.125rem;
+  }
+
+  .about-visual__wrapper {
+    max-width: 310px;
+  }
+
+  .about-visual__frame {
+    height: 390px;
+  }
+
+  .about-card-badge--exp {
+    right: 0;
+    bottom: -16px;
+    padding: 0.65rem 0.95rem;
+    border-radius: 14px;
+  }
+
+  .about-card-badge__icon {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .about-card-badge__title {
+    font-size: 1rem;
+  }
+
+  .about-card-badge__sub {
+    font-size: 0.6875rem;
+  }
+
+  .about-highlight-card {
+    padding: 1rem 1.15rem;
+    gap: 1rem;
+  }
+
+  .about-highlight-card__icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .about__info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about__info-card {
+    padding: 1.25rem;
+  }
+
+  .about__cv-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-stats {
+    padding: 2.25rem 1.25rem;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 1rem;
+  }
+
+  /* Day 4 Skills Section Mobile */
+  .skills-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .skills__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .skills__heading {
+    font-size: 2.125rem;
+  }
+
+  .skills-filter-nav {
+    gap: 0.5rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .skill-card__icon-box {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .skill-card__name {
+    font-size: 0.95rem;
+  }
+
+  .skill-card__tag {
+    font-size: 0.625rem;
+  }
+
+  /* Day 5 Services Section Mobile (576px) */
+  .services-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .services-cta-banner {
+    padding: 2rem 1.25rem;
+  }
+
+  .services-cta-banner__title {
+    font-size: 1.375rem;
+  }
+
+  .service-card__top {
+    margin-bottom: 1.25rem;
+  }
+
+  .service-card__icon-box {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .service-card__number {
+    font-size: 1.25rem;
+  }
+
+  .service-modal__dialog {
+    padding: 1.75rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .service-modal__title {
+    font-size: 1.35rem;
+  }
+
+  /* Day 6 Projects Section Mobile (576px) */
+  .projects-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .projects-filter-btn {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8125rem;
+  }
+
+  .project-card__content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .project-card__title {
+    font-size: 1.15rem;
+  }
+
+  .project-modal__dialog {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+
+  .project-modal__title {
+    font-size: 1.35rem;
+  }
+
+  /* Day 7 Journey Section Mobile (576px) */
+  .journey-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .timeline-line {
+    left: 14px;
+  }
+
+  .timeline-item--left,
+  .timeline-item--right {
+    padding-left: 42px;
+  }
+
+  .timeline-item--left .timeline-marker,
+  .timeline-item--right .timeline-marker {
+    left: 4px !important;
+    width: 18px;
+    height: 18px;
+    top: 22px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .experience-card__title {
+    font-size: 1.15rem;
+  }
+
+  .education-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .education-card__degree {
+    font-size: 1.15rem;
+  }
+
+  .scroll-tester__space {
+    gap: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. Small Mobile (375px and below)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  :root {
+    --navbar-height-initial: 68px;
+    --navbar-height-scrolled: 58px;
+    --container-padding: 1rem;
+  }
+
+  .navbar__logo-title {
+    font-size: 1.0625rem;
+  }
+
+  .navbar__logo-subtitle {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .mobile-nav__drawer {
+    width: 94%;
+    padding: 1.25rem 1.25rem 1.75rem;
+  }
+
+  .mobile-nav__link {
+    font-size: 1.125rem;
+  }
+
+  .hero-section {
+    padding: 2.25rem 0 1.75rem;
+  }
+
+  .hero__meta-row {
+    gap: 0.5rem;
+  }
+
+  .hero__intro-pill,
+  .hero__status-badge {
+    padding: 0.3rem 0.75rem;
+  }
+
+  .hero__intro-text,
+  .hero__status-text {
+    font-size: 0.6875rem;
+  }
+
+  .hero__title {
+    font-size: 1.875rem;
+  }
+
+  .hero__role-wrapper {
+    font-size: 1rem;
+  }
+
+  .hero-3d-scene {
+    max-width: 290px;
+    height: 380px;
+  }
+
+  .hero-visual__frame {
+    width: 235px;
+    height: 320px;
+  }
+
+  .hero-glass-card--top {
+    top: 2%;
+    right: -4px;
+  }
+
+  .hero-glass-card--bottom {
+    bottom: 4%;
+    left: -4px;
+  }
+
+  /* Day 3 About Section Small Mobile */
+  .about-visual__wrapper {
+    max-width: 260px;
+  }
+
+  .about-visual__frame {
+    height: 330px;
+  }
+
+  .about-card-badge--exp {
+    padding: 0.5rem 0.8rem;
+    bottom: -12px;
+  }
+
+  .about-card-badge__title {
+    font-size: 0.9375rem;
+  }
+
+  .about-card-badge__sub {
+    font-size: 0.625rem;
+  }
+
+  .about-stats__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-stats {
+    padding: 1.75rem 1rem;
+  }
+
+  /* Day 4 Skills Section Small Mobile */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skills-filter-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.75rem;
+  }
+
+  /* Day 5 Services Section Small Mobile (375px) */
+  .service-card {
+    padding: 1.5rem 1.125rem;
+  }
+
+  .service-card__title {
+    font-size: 1.25rem;
+  }
+
+  .service-card__desc {
+    font-size: 0.875rem;
+  }
+
+  .service-card__feature-item {
+    font-size: 0.8125rem;
+  }
+
+  .services-cta-banner {
+    padding: 1.75rem 1rem;
+  }
+
+  .service-modal {
+    padding: 0.5rem;
+  }
+
+  .service-modal__dialog {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Day 6 Projects Section Small Mobile (375px) */
+  .projects-filter-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .project-card__content {
+    padding: 1.25rem 1rem;
+  }
+
+  .project-card__title {
+    font-size: 1.1rem;
+  }
+
+  .project-card__desc {
+    font-size: 0.8125rem;
+  }
+
+  .project-modal {
+    padding: 0.5rem;
+  }
+
+  .project-modal__dialog {
+    padding: 1.25rem 0.875rem;
+  }
+
+  /* Day 7 Journey Section Small Mobile (375px) */
+  .timeline-line {
+    left: 10px;
+  }
+
+  .timeline-item--left,
+  .timeline-item--right {
+    padding-left: 32px;
+  }
+
+  .timeline-item--left .timeline-marker,
+  .timeline-item--right .timeline-marker {
+    left: 0 !important;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+  }
+
+  .experience-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .experience-card__title {
+    font-size: 1.05rem;
+  }
+
+  .education-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .education-card__degree {
+    font-size: 1.05rem;
+  }
+
+  .cert-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .achievement-card__number-wrap {
+    font-size: 2.25rem;
+  }
+
+  .research-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .research-card__visual {
+    min-height: 140px;
+  }
+
+  .research-card__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Day 8 Testimonials Section (375px Small Mobile) */
+  .testimonial-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .testimonials-cta__title {
+    font-size: 1.35rem;
+  }
+
+  .testimonial-card__footer {
+    flex-wrap: wrap;
+  }
+
+  /* Day 9 Contact Section (375px Small Mobile) */
+  .contact-card {
+    padding: 1.15rem 1rem;
+  }
+
+  .contact-card__link {
+    font-size: 0.9rem;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-form-card__title {
+    font-size: 1.35rem;
+  }
+
+  .scroll-tester__marker {
+    padding: 1.75rem 1rem;
+  }
+
+  .marker-tag {
+    font-size: 0.75rem;
+  }
+}
+
+
+/* ==========================================================================
+   DAY 10 RESPONSIVE ENHANCEMENTS
+   ========================================================================== */
+@media (max-width: 991px) {
+  /* Disable custom cursor explicitly on touch and tablet viewports */
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Compact Back to Top Button on Mobile */
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-loader__content {
+    padding: 1.5rem 1rem;
+    max-width: 320px;
+  }
+
+  .page-loader__logo {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 1rem;
+  }
+
+  .page-loader__monogram {
+    font-size: 1.5rem;
+  }
+
+  .page-loader__brand {
+    font-size: 1.05rem;
+    letter-spacing: 0.2em;
+  }
+
+  .page-loader__tagline {
+    font-size: 0.75rem;
+  }
+}
